@@ -53,10 +53,10 @@ One row per tool, one column per thing people actually check before committing. 
 | **[Shotstack](#2-shotstack)** | Yes | [check](https://shotstack.io/pricing/) | [pricing](https://shotstack.io/pricing/) | n/a |
 | **[Creatomate](#3-creatomate)** | Yes | [check](https://creatomate.com/pricing) | [pricing](https://creatomate.com/pricing) | [Creatomate/creatomate-node](https://github.com/Creatomate/creatomate-node), 9 ★, 1.2.1 |
 | **[JSON2Video](#4-json2video)** | Yes | Yes | [pricing](https://json2video.com/pricing/) | [JSON2Video/json2video-nodejs-sdk](https://github.com/JSON2Video/json2video-nodejs-sdk), 22 ★, v2.0.4 |
-| **[Revideo](#5-revideo)** | n/a | Yes | n/a | [midrender/revideo](https://github.com/midrender/revideo), 4,097 ★, pushed 2026-07-15 |
-| **[Motion Canvas](#6-motion-canvas)** | n/a | Yes | n/a | [motion-canvas/motion-canvas](https://github.com/motion-canvas/motion-canvas), 19,284 ★, v3.17.2 |
-| **[Editly](#7-editly)** | n/a | Yes | n/a | [mifi/editly](https://github.com/mifi/editly), 5,524 ★, v0.15.0-rc.1 |
-| **[FFCreator](#8-ffcreator)** | n/a | Yes | n/a | [tnfe/FFCreator](https://github.com/tnfe/FFCreator), 3,163 ★, v6.8.1 |
+| **[Revideo](#5-revideo)** | n/a | Yes | n/a | [midrender/revideo](https://github.com/midrender/revideo), 4,098 ★, pushed 2026-07-15 |
+| **[Motion Canvas](#6-motion-canvas)** | n/a | Yes | n/a | [motion-canvas/motion-canvas](https://github.com/motion-canvas/motion-canvas), 19,293 ★, v3.17.2 |
+| **[Editly](#7-editly)** | n/a | Yes | n/a | [mifi/editly](https://github.com/mifi/editly), 5,523 ★, v0.15.0-rc.1 |
+| **[FFCreator](#8-ffcreator)** | n/a | Yes | n/a | [tnfe/FFCreator](https://github.com/tnfe/FFCreator), 3,164 ★, v6.8.1 |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
