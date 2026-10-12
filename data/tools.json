@@ -1,0 +1,352 @@
+{
+  "keyword": "remotion alternatives",
+  "title": "Remotion Alternatives: 8 Video Frameworks and APIs Compared (2026)",
+  "lastChecked": "2026-10-12",
+  "capabilityChecks": [
+    {
+      "key": "mitLicence",
+      "label": "MIT licence"
+    },
+    {
+      "key": "scenesWrittenInCode",
+      "label": "Scenes written in code"
+    },
+    {
+      "key": "wholeVideoAsJson",
+      "label": "Whole video as JSON"
+    },
+    {
+      "key": "serverOrCloudRendering",
+      "label": "Server or cloud rendering"
+    },
+    {
+      "key": "visualEditor",
+      "label": "Visual editor"
+    },
+    {
+      "key": "captionsOrSubtitles",
+      "label": "Captions or subtitles"
+    },
+    {
+      "key": "aiVoiceover",
+      "label": "AI voiceover"
+    },
+    {
+      "key": "aiImageOrVideoGeneration",
+      "label": "AI image or video generation"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": "Best overall for generating the footage and hosting the render",
+      "homepage": "https://www.wireflow.ai/",
+      "docs": "https://www.wireflow.ai/docs/api/overview",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": null,
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Add the Wireflow connector to Claude Code, from the wireflowINC/skills README. Then run /mcp to sign in.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http wireflow https://www.wireflow.ai/api/mcp"
+        },
+        {
+          "label": "Or run a saved workflow from code: send its input values to this endpoint with an API key, then poll the execution. The request format is in the API reference linked under Docs.",
+          "lang": "text",
+          "code": "POST /api/v1/workflows/{id}/run"
+        }
+      ],
+      "moneyPage": "https://www.wireflow.ai/features/ai-video-workflow",
+      "moneyPageLabel": "Wireflow AI video workflow page",
+      "capabilities": {
+        "mitLicence": null,
+        "scenesWrittenInCode": false,
+        "wholeVideoAsJson": true,
+        "serverOrCloudRendering": true,
+        "visualEditor": true,
+        "captionsOrSubtitles": true,
+        "aiVoiceover": true,
+        "aiImageOrVideoGeneration": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "Shotstack",
+      "tagline": "Best for developers who keep video as JSON",
+      "homepage": "https://shotstack.io/",
+      "docs": "https://shotstack.io/docs/guide/getting-started/core-concepts/",
+      "pricing": "https://shotstack.io/pricing/",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "No repository is listed for Shotstack in the data table, because its Studio SDK source is under the PolyForm Shield License 1.0.0 (see Limit).",
+      "quickstart": [
+        {
+          "label": "Render a JSON edit in the sandbox, from Shotstack's Hello World guide. The file hello.json is the edit from that guide.",
+          "lang": "bash",
+          "code": "curl -X POST \\\n  -H \"Content-Type: application/json\" \\\n  -H \"x-api-key: $SHOTSTACK_API_KEY\" \\\n  -d @hello.json \\\n  https://api.shotstack.io/edit/stage/render"
+        }
+      ],
+      "capabilities": {
+        "mitLicence": false,
+        "scenesWrittenInCode": false,
+        "wholeVideoAsJson": true,
+        "serverOrCloudRendering": true,
+        "visualEditor": true,
+        "captionsOrSubtitles": true,
+        "aiVoiceover": true,
+        "aiImageOrVideoGeneration": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 3,
+      "name": "Creatomate",
+      "tagline": "Best for many versions of one designed template",
+      "homepage": "https://creatomate.com/",
+      "docs": "https://creatomate.com/docs/fundamentals/getting-started/introduction",
+      "pricing": "https://creatomate.com/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "Creatomate/creatomate-node",
+      "note": "The linked repository is the official Node.js SDK. Rendering is a hosted service.",
+      "quickstart": [
+        {
+          "label": "Render a template with modifications, from the example on the Creatomate homepage. Use your own template ID and API key.",
+          "lang": "bash",
+          "code": "curl -X POST https://api.creatomate.com/v2/renders \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Authorization: Bearer API_KEY\" \\\n  -d '{\n    \"template_id\": \"58c1163e-f250-49df-b98d-e8c4aad01a2d\",\n    \"modifications\": {\n      \"Title\": \"Your Text And Video Here\",\n      \"Title.fill_color\": \"#4980f1\",\n      \"Background-Video\": \"https://example.com/video.mp4\"\n    }\n  }'"
+        }
+      ],
+      "capabilities": {
+        "mitLicence": null,
+        "scenesWrittenInCode": false,
+        "wholeVideoAsJson": true,
+        "serverOrCloudRendering": true,
+        "visualEditor": true,
+        "captionsOrSubtitles": true,
+        "aiVoiceover": true,
+        "aiImageOrVideoGeneration": true
+      },
+      "live": {
+        "stars": 9,
+        "lastPush": "2024-09-23T09:46:26Z",
+        "latestRelease": "1.2.1",
+        "latestReleaseDate": "2024-09-23",
+        "checkedAt": "2026-10-12"
+      }
+    },
+    {
+      "n": 4,
+      "name": "JSON2Video",
+      "tagline": "Best for narrated and captioned clips from data",
+      "homepage": "https://json2video.com/",
+      "docs": "https://json2video.com/docs/v2/getting-started",
+      "pricing": "https://json2video.com/pricing/",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "JSON2Video/json2video-nodejs-sdk",
+      "note": "The linked repository is the official Node.js SDK. Rendering is a hosted service.",
+      "quickstart": [
+        {
+          "label": "Create a video from movie JSON, from the JSON2Video API overview. The response returns a project ID to poll.",
+          "lang": "bash",
+          "code": "curl -X POST https://api.json2video.com/v2/movies \\\n  -H \"x-api-key: YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"resolution\": \"full-hd\",\n    \"scenes\": [{\n      \"elements\": [{\n        \"type\": \"video\",\n        \"src\": \"https://example.com/video.mp4\"\n      }]\n    }]\n  }'"
+        }
+      ],
+      "capabilities": {
+        "mitLicence": null,
+        "scenesWrittenInCode": false,
+        "wholeVideoAsJson": true,
+        "serverOrCloudRendering": true,
+        "visualEditor": true,
+        "captionsOrSubtitles": true,
+        "aiVoiceover": true,
+        "aiImageOrVideoGeneration": false
+      },
+      "live": {
+        "stars": 22,
+        "lastPush": "2024-04-04T12:54:12Z",
+        "latestRelease": "v2.0.4",
+        "latestReleaseDate": "2024-04-04",
+        "checkedAt": "2026-10-12"
+      }
+    },
+    {
+      "n": 5,
+      "name": "Revideo",
+      "tagline": "Best for keeping video as code under a permissive licence",
+      "homepage": "https://midrender.com/revideo",
+      "docs": "https://midrender.com/revideo/docs",
+      "pricing": null,
+      "claudeConnection": null,
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "midrender/revideo",
+      "note": "The repository moved from redotvideo/revideo to midrender/revideo. It has no tagged GitHub release, so the data table shows the date of the last push.",
+      "quickstart": [
+        {
+          "label": "Create a project, from the Revideo README.",
+          "lang": "bash",
+          "code": "npm init @revideo@latest"
+        }
+      ],
+      "capabilities": {
+        "mitLicence": true,
+        "scenesWrittenInCode": true,
+        "wholeVideoAsJson": false,
+        "serverOrCloudRendering": true,
+        "visualEditor": null,
+        "captionsOrSubtitles": null,
+        "aiVoiceover": null,
+        "aiImageOrVideoGeneration": null
+      },
+      "live": {
+        "stars": 4097,
+        "lastPush": "2026-07-15T22:43:55Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-12"
+      }
+    },
+    {
+      "n": 6,
+      "name": "Motion Canvas",
+      "tagline": "Best for hand-built explainer animations",
+      "homepage": "https://motion-canvas.io/",
+      "docs": "https://motion-canvas.io/docs/quickstart/",
+      "pricing": null,
+      "claudeConnection": null,
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "motion-canvas/motion-canvas",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Scaffold a project, from the Motion Canvas quickstart. It asks for Node.js version 16 or greater.",
+          "lang": "bash",
+          "code": "npm init @motion-canvas@latest"
+        }
+      ],
+      "capabilities": {
+        "mitLicence": true,
+        "scenesWrittenInCode": true,
+        "wholeVideoAsJson": null,
+        "serverOrCloudRendering": null,
+        "visualEditor": true,
+        "captionsOrSubtitles": null,
+        "aiVoiceover": null,
+        "aiImageOrVideoGeneration": null
+      },
+      "live": {
+        "stars": 19284,
+        "lastPush": "2026-07-02T20:01:32Z",
+        "latestRelease": "v3.17.2",
+        "latestReleaseDate": "2024-12-14",
+        "checkedAt": "2026-10-12"
+      }
+    },
+    {
+      "n": 7,
+      "name": "Editly",
+      "tagline": "Best for cutting existing clips from one spec file",
+      "homepage": "https://github.com/mifi/editly",
+      "docs": null,
+      "pricing": null,
+      "claudeConnection": null,
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "mifi/editly",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Install, then render from a JSON5 edit spec, from the Editly README. It needs ffmpeg and ffprobe on the PATH.",
+          "lang": "bash",
+          "code": "npm i -g editly\neditly my-spec.json5 --fast --keep-source-audio --out output.gif"
+        }
+      ],
+      "capabilities": {
+        "mitLicence": true,
+        "scenesWrittenInCode": true,
+        "wholeVideoAsJson": true,
+        "serverOrCloudRendering": true,
+        "visualEditor": null,
+        "captionsOrSubtitles": true,
+        "aiVoiceover": null,
+        "aiImageOrVideoGeneration": null
+      },
+      "live": {
+        "stars": 5524,
+        "lastPush": "2025-05-12T07:03:44Z",
+        "latestRelease": "v0.15.0-rc.1",
+        "latestReleaseDate": "2025-01-19",
+        "checkedAt": "2026-10-12"
+      }
+    },
+    {
+      "n": 8,
+      "name": "FFCreator",
+      "tagline": "Best for slideshow-style short videos",
+      "homepage": "https://github.com/tnfe/FFCreator",
+      "docs": "https://tnfe.github.io/FFCreator/",
+      "pricing": null,
+      "claudeConnection": null,
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "tnfe/FFCreator",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Install the package, from the FFCreator README. It needs a regular FFmpeg install.",
+          "lang": "bash",
+          "code": "npm install ffcreator --save"
+        }
+      ],
+      "capabilities": {
+        "mitLicence": true,
+        "scenesWrittenInCode": true,
+        "wholeVideoAsJson": null,
+        "serverOrCloudRendering": true,
+        "visualEditor": null,
+        "captionsOrSubtitles": true,
+        "aiVoiceover": null,
+        "aiImageOrVideoGeneration": null
+      },
+      "live": {
+        "stars": 3163,
+        "lastPush": "2024-12-19T07:43:53Z",
+        "latestRelease": "v6.8.1",
+        "latestReleaseDate": "2023-02-09",
+        "checkedAt": "2026-10-12"
+      }
+    }
+  ]
+}
