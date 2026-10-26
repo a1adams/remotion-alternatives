@@ -1,7 +1,7 @@
 {
   "keyword": "remotion alternatives",
   "title": "Remotion Alternatives: 8 Video Frameworks and APIs Compared (2026)",
-  "lastChecked": "2026-10-19",
+  "lastChecked": "2026-10-26",
   "capabilityChecks": [
     {
       "key": "mitLicence",
@@ -155,7 +155,7 @@
         "lastPush": "2024-09-23T09:46:26Z",
         "latestRelease": "1.2.1",
         "latestReleaseDate": "2024-09-23",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-26"
       }
     },
     {
@@ -193,7 +193,7 @@
         "lastPush": "2024-04-04T12:54:12Z",
         "latestRelease": "v2.0.4",
         "latestReleaseDate": "2024-04-04",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-26"
       }
     },
     {
@@ -227,11 +227,11 @@
         "aiImageOrVideoGeneration": null
       },
       "live": {
-        "stars": 4120,
+        "stars": 4146,
         "lastPush": "2026-07-15T22:43:55Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-26"
       }
     },
     {
@@ -265,11 +265,11 @@
         "aiImageOrVideoGeneration": null
       },
       "live": {
-        "stars": 19391,
+        "stars": 19492,
         "lastPush": "2026-07-02T20:01:32Z",
         "latestRelease": "v3.17.2",
         "latestReleaseDate": "2024-12-14",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-26"
       }
     },
     {
@@ -303,11 +303,11 @@
         "aiImageOrVideoGeneration": null
       },
       "live": {
-        "stars": 5529,
+        "stars": 5552,
         "lastPush": "2025-05-12T07:03:44Z",
         "latestRelease": "v0.15.0-rc.1",
         "latestReleaseDate": "2025-01-19",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-26"
       }
     },
     {
@@ -341,11 +341,11 @@
         "aiImageOrVideoGeneration": null
       },
       "live": {
-        "stars": 3164,
+        "stars": 3166,
         "lastPush": "2024-12-19T07:43:53Z",
         "latestRelease": "v6.8.1",
         "latestReleaseDate": "2023-02-09",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-26"
       }
     }
   ]
