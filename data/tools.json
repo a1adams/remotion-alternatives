@@ -347,6 +347,49 @@
         "latestReleaseDate": "2023-02-09",
         "checkedAt": "2026-11-16"
       }
+    },
+    {
+      "n": 9,
+      "name": "HyperFrames",
+      "tagline": "Best for an open-source AI video editor that agents and people both use: create, edit and remake videos as HTML",
+      "homepage": "https://hyperframes.studio/",
+      "docs": "https://hyperframes.heygen.com/quickstart",
+      "pricing": "https://hyperframes.studio/pricing",
+      "claudeConnection": null,
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "heygen-com/hyperframes",
+      "note": "The linked repository is the Apache 2.0 framework, CLI and agent skills. The HyperFrames Studio desktop app is a separate download.",
+      "quickstart": [
+        {
+          "label": "Give your coding agent the skills, from the HyperFrames README. Then ask it to make a video.",
+          "lang": "bash",
+          "code": "npx skills add heygen-com/hyperframes"
+        },
+        {
+          "label": "Or scaffold, preview and render by hand, from the HyperFrames README. It needs Node.js 22+ and FFmpeg.",
+          "lang": "bash",
+          "code": "npx hyperframes init my-video\ncd my-video\nnpx hyperframes preview\nnpx hyperframes render"
+        }
+      ],
+      "capabilities": {
+        "mitLicence": false,
+        "scenesWrittenInCode": true,
+        "wholeVideoAsJson": false,
+        "serverOrCloudRendering": true,
+        "visualEditor": true,
+        "captionsOrSubtitles": true,
+        "aiVoiceover": true,
+        "aiImageOrVideoGeneration": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
     }
   ]
 }

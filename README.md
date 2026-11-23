@@ -10,6 +10,7 @@ This list compares 8 Remotion alternatives, each checked against its vendor's ow
 6. **Motion Canvas**: Best for hand-built explainer animations, an MIT TypeScript library with a live editor
 7. **Editly**: Best for cutting existing clips from one spec file, an MIT tool built on Node.js and ffmpeg
 8. **FFCreator**: Best for slideshow-style short videos, an MIT Node.js library with ready-made transitions
+9. **HyperFrames**: Best for an open-source AI video editor that agents and people both use, an Apache 2.0 framework with agent skills and a desktop editor
 
 The Wireflow team maintains this list, so read entry 1 with that in mind. [Wireflow's AI video workflow page](https://www.wireflow.ai/features/ai-video-workflow) shows the product in the vendor's own words, and every other entry links to its vendor's pages so that each cell can be checked.
 
@@ -35,6 +36,7 @@ Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, se
   - [Motion Canvas](#6-motion-canvas)
   - [Editly](#7-editly)
   - [FFCreator](#8-ffcreator)
+  - [HyperFrames](#9-hyperframes)
 - [Remotion, the baseline](#remotion-the-baseline)
 - [What each check means](#what-each-check-means)
 - [How this list is maintained](#how-this-list-is-maintained)
@@ -57,6 +59,7 @@ One row per tool, one column per thing people actually check before committing. 
 | **[Motion Canvas](#6-motion-canvas)** | n/a | Yes | n/a | [motion-canvas/motion-canvas](https://github.com/motion-canvas/motion-canvas), 19,971 ★, v3.17.2 |
 | **[Editly](#7-editly)** | n/a | Yes | n/a | [mifi/editly](https://github.com/mifi/editly), 5,615 ★, v0.15.0-rc.1 |
 | **[FFCreator](#8-ffcreator)** | n/a | Yes | n/a | [tnfe/FFCreator](https://github.com/tnfe/FFCreator), 3,166 ★, v6.8.1 |
+| **[HyperFrames](#9-hyperframes)** | n/a | Yes | [pricing](https://hyperframes.studio/pricing) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
@@ -69,6 +72,7 @@ The score counts the documented capabilities a tool has, out of the checks liste
 | **[Wireflow](#1-wireflow)** | n/a | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/8** |
 | **[Shotstack](#2-shotstack)** | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/8** |
 | **[Creatomate](#3-creatomate)** | n/a | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/8** |
+| **[HyperFrames](#9-hyperframes)** | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/8** |
 | **[JSON2Video](#4-json2video)** | n/a | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | **5/8** |
 | **[Editly](#7-editly)** | ✅ | ✅ | ✅ | ✅ | n/a | ✅ | n/a | n/a | **5/8** |
 | **[FFCreator](#8-ffcreator)** | ✅ | ✅ | n/a | ✅ | n/a | ✅ | n/a | n/a | **4/8** |
@@ -88,6 +92,7 @@ The score counts the documented capabilities a tool has, out of the checks liste
 | **Motion Canvas** | Hand-built explainer animations | Free, MIT licence | TypeScript generators | The editor's RENDER button |
 | **Editly** | Cuts of existing clips and stills | Free, MIT licence | A JSON or JavaScript spec | Your machine, from the CLI |
 | **FFCreator** | Slideshow-style short videos | Free, MIT licence | JavaScript scenes | Your server, with Node.js |
+| **HyperFrames** | Agent-made video you keep editing | Free, Apache 2.0; app has a free plan | HTML, CSS and JavaScript, or a prompt in the app | Your machine, Docker, AWS Lambda or HyperFrames cloud |
 
 Facts checked on 2026-10-11 against each vendor's own pages. Prices are not typed here, so follow the pricing links in the data table.
 
@@ -300,6 +305,28 @@ Pick FFCreator over Editly when ready-made transitions and animation presets mat
 Install the package, from the FFCreator README. It needs a regular FFmpeg install.
 ```bash
 npm install ffcreator --save
+```
+
+### 9. HyperFrames
+
+*Best for an open-source AI video editor that agents and people both use: create, edit and remake videos as HTML*
+
+![HyperFrames screenshot](https://static.heygen.ai/hyperframes-oss/readme/2026-11/hero-studio-intro-v1.webp)
+
+- **What it is:** [HyperFrames](https://hyperframes.studio/) is HeyGen's open-source AI video editor and a Remotion alternative: people make launch videos, explainers, captions on their own footage and motion graphics by describing the video, bringing footage or remaking a video they like, then change the result down to the frame, with Claude Code, Codex, Cursor, Gemini CLI or the HyperFrames Studio app. Underneath is an Apache 2.0 framework that renders HTML, CSS, JavaScript, media and seekable animations (GSAP, Lottie, Three.js and others) to MP4.
+- **Best for:** Teams that want Claude Code, Codex, Cursor or Gemini CLI to make and revise videos, and developers leaving Remotion who would rather write plain HTML than React.
+- **Pricing basis:** The framework, CLI and agent skills are free and open source under Apache 2.0, with no per-render fees. The HyperFrames Studio app for Mac, Windows and Linux has a free plan; its Pro plan adds a built-in agent and hosted video, image, voice and music models. Source: [the HyperFrames README](https://github.com/heygen-com/hyperframes) and [pricing page](https://hyperframes.studio/pricing).
+- **Standout:** Rendering is deterministic: the renderer seeks each frame in headless Chrome and encodes it with FFmpeg, so the same input gives the same video, and an `index.html` composition plays in the browser with no build step. Its agent skills cover the production loop, captions, voiceover, rebuilding an existing video as an editable project, and porting a Remotion project, and about 450 catalog blocks (transitions, captions, charts, maps) install as editable source.
+- **Limit:** A video is an HTML document, not a JSON spec, so someone, or an agent, has to write web code; there is no single JSON document to send as with the hosted APIs above. Local renders need Node.js 22+ and FFmpeg, its Lambda rendering is newer than Remotion Lambda, and the hosted AI models and built-in agent need the paid plan. The hosted chat connector is in beta.
+- **API or automation:** A non-interactive CLI (`init`, `preview`, `lint`, `render`), cloud rendering with `hyperframes cloud render`, AWS Lambda and Google Cloud Run deploy paths, a plugin listed in OpenAI's Codex plugin directory, and a hosted MCP connector listed in Claude's connector directory. A REST API is not published for it.
+- **Note:** The linked repository is the Apache 2.0 framework, CLI and agent skills. The HyperFrames Studio desktop app is a separate download.
+- **Sources:** [the HyperFrames README](https://github.com/heygen-com/hyperframes), [quickstart](https://hyperframes.heygen.com/quickstart) and [HyperFrames vs Remotion guide](https://hyperframes.heygen.com/guides/hyperframes-vs-remotion), checked 2026-11-23.
+
+Pick HyperFrames over Revideo or Motion Canvas when an AI agent will write and revise the video, or when you want to edit it in an app as well as in code. Pick a JSON API above when you only fill one template with data.
+
+Give your coding agent the skills, from the HyperFrames README. Then ask it to make a video.
+```bash
+npx skills add heygen-com/hyperframes
 ```
 
 ## Remotion, the baseline
